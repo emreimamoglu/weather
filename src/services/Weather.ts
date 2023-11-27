@@ -1,4 +1,3 @@
-import { AxiosResponse } from "axios";
 import axios from "axios";
 
 class WeatherService {
@@ -14,8 +13,8 @@ class WeatherService {
 
   public async getWeatherData({ lat, lon, units }: { lat: number; lon: number, units: string }) {
     return axios
-      .get<AxiosResponse>(
-        `http://localhost:4000/api/weather`,
+      .get(
+        `${import.meta.env.VITE_API_BASE_URL}/api/weather`,
         {
           params: {
             lat,

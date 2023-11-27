@@ -1,4 +1,3 @@
-import { AxiosResponse } from "axios";
 import axios from "axios";
 
 class PlacesService {
@@ -14,7 +13,7 @@ class PlacesService {
 
   public async getPlaces(query: string) {
     return axios
-      .get<AxiosResponse>(`http://localhost:4000/api/place/textsearch`, {
+      .get(`${import.meta.env.VITE_API_BASE_URL}/api/place/textsearch`, {
         params: {
           query,
           key: import.meta.env.VITE_GOOGLE_PLACES_API_KEY,
@@ -25,7 +24,7 @@ class PlacesService {
 
   public async getPlacePhoto(place: string) {
     return axios
-      .get<AxiosResponse>(
+      .get(
         `https://api.teleport.org/api/urban_areas/slug:${place}/images/`
       )
       .then((res) => res.data);

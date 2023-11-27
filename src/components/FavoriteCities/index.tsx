@@ -1,5 +1,4 @@
 import "./styles.css";
-import RainySunny from "../../assets/icons/rainysunny.svg";
 import { useUserContext } from "../../contexts/User";
 import CloseIcon from "../../assets/icons/close.svg";
 

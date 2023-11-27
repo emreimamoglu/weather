@@ -71,10 +71,10 @@ const SearchBar = () => {
       </div>
       {suggestions.length > 0 && (
         <ul className="suggestions-list">
-          {suggestions.map((suggestion, index) => (
+          {suggestions.map((suggestion : any, index) => (
             <li
               key={index}
-              onClick={(e) => {
+              onClick={() => {
                 setSelectedCity(suggestion);
                 setQuery("");
                 setSuggestions([]);
