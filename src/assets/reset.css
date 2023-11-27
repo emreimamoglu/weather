@@ -129,9 +129,11 @@ table {
   border-spacing: 0;
 }
 
-#app {
+#root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
+  background: #111015;
+  padding: 1.62rem 1.5rem;
 }

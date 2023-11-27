@@ -1,0 +1,68 @@
+.overview-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.88rem;
+  max-width: 45%;
+}
+
+.overview-section h5 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.data-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.data-card {
+  display: flex;
+  flex-direction: column;
+  width: 18.125rem;
+  height: 15.3125rem;
+  border-radius: 0.9375rem;
+  background: #1b1b1d;
+  padding: 1.62rem 0 1.62rem 0.87rem;
+}
+
+.data-card span:first-child {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.data-card img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.data-card .icon-and-data{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-block-start: 3rem;
+    margin-block-end: 1.25rem;
+}
+
+.data-card .status-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-card .status-result span:first-child {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.data-card .status-result span:last-child {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}

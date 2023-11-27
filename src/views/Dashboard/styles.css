@@ -1,0 +1,11 @@
+#forecasts-and-precipitation{
+    display: flex;
+    gap: 1.5rem;
+    margin-block-start: 4rem;
+}
+
+#overview-and-favorites{
+    display: flex;
+    margin-block-start: 4rem;
+    justify-content: space-between;
+}
